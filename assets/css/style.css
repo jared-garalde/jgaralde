@@ -1,7 +1,8 @@
 html, body {
-    margin-top: 2%;
+    /* margin-top: 2%;
     margin-left: 8%;
-    margin-right: 8%;
+    margin-right: 8%; */
+    box-sizing:border-box;
 
     animation: fadeInLanding 1s ease-in 0s;
     background-color: #f9f9f9;
@@ -33,9 +34,9 @@ b {
     color: #00C7B1;
 }
 
-b:hover {
+/* b:hover {
     animation: fadeOut 0.5s ease-in 0s forwards;
-}
+} */
 
 a {
     text-decoration: none;
@@ -107,7 +108,7 @@ nav {
     /* letter-spacing: 2px; */
 
 }
-.nav-item:hover {
+.nav-item a:hover {
     opacity: 100%;
     color: #00C7B1;
 }
@@ -149,7 +150,7 @@ label {
 /********** INDEX **********/
 #masthead {
     align-items: left;
-    margin-right: 40rem;
+    /* margin-right: 40rem; */
     font-size: 1.8rem;
 }
 
