@@ -1,5 +1,8 @@
 html, body {
-    padding: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
     animation: fadeInLanding 1s ease-in 0s;
     background-color: #f9f9f9;
     scroll-behavior: smooth;
@@ -14,7 +17,7 @@ html, body {
 html {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 25 px;
     line-height: 1.5; 
     color: #333;
 
@@ -22,10 +25,14 @@ html {
 }
 
 h1 {
-    font-weight: 500;
+    font-weight: 400;
     /* letter-spacing: 1.7px; */
-    font-size: 1.5rem;
+    font-size: 1em;
     /* text-transform: uppercase; */
+}
+h2 {
+    font-weight: 400;
+    font-size: 0.7em;
 }
 
 b {
@@ -47,13 +54,13 @@ a {
 } */
 
 p {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 nav {
     width: 100%;
     padding-left: 30px;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 .bold {
     font-weight: 500;
@@ -81,16 +88,31 @@ flex-grid .col{
 .flex-grid-thirds .col{
     width: 32%;
 }
-@media (max-width:400px) {
-    .flex-grid,
-    .flex-grid-thirds {
-        display: block;
-    }
-    .flex-grid, .flex-grid-thirds .col {
-        width: 100%;
-        margin: 0 0 10px;
-    }
+.flex-grid-header {
+    display: flex;
+    justify-content:flex-start;
 }
+.flex-grid-header .col {
+    justify-content: flex-start;
+    width: 40%;
+}
+.flex-grid-header-direct {
+    display: flex;
+    justify-content:flex-start;
+}
+.flex-grid-header-direct .col{
+    justify-content: flex-start;
+    width: 40%;
+}
+.flex-grid-footer {
+    display: flex;
+    justify-content: space-between
+}
+.flex-grid-footer .col{
+    justify-content: flex-end;
+    width: 40%;
+}
+
 
 /********** NAVBAR **********/
 
@@ -155,7 +177,7 @@ flex-grid .col{
 
 .navbar {
     margin-top: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -551,12 +573,13 @@ video {
 
 @media screen and (max-width: 800px) {
     /* nav */
+    }
     label {
         display: block;
         cursor: pointer;
-
         float: right;
         margin-bottom: 10%;
+
     }
 
     .menu {
@@ -690,4 +713,4 @@ video {
         height: 100%;
     }
 
-  }
+  
