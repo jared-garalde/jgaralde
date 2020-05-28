@@ -1,6 +1,6 @@
 html, body {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
     padding-left: 8%;
     padding-right: 8%;
     animation: fadeInLanding 1s ease-in 0s;
@@ -106,11 +106,13 @@ flex-grid .col{
 }
 .flex-grid-footer {
     display: flex;
-    justify-content: space-between
+    flex-direction: row;
+    justify-content:space-between;
 }
 .flex-grid-footer .col{
     justify-content: flex-end;
-    width: 40%;
+    padding-right: 35px;
+
 }
 
 
@@ -476,14 +478,14 @@ video {
 
 /********** FOOTER **********/
 
-#footer {
+/* #footer {
     padding-top: 10%;
     padding-bottom: 2%;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+} */
 
 .copyright {
     /* letter-spacing: 1px; */
@@ -573,8 +575,7 @@ video {
 
 @media screen and (max-width: 800px) {
     /* nav */
-    }
-    label {
+    /* label {
         display: block;
         cursor: pointer;
         float: right;
@@ -600,7 +601,7 @@ video {
 
     #toggle:checked + .menu {
         display: flex;
-    }
+    } */
 
     /* index.html */
     #content, #columns, #showcaseWork {
@@ -609,17 +610,21 @@ video {
       flex-direction: column;
     }
 
-    #masthead {
+    #header {
         padding: 0%;
         margin: 0%;
+    }
+
+    .flex-grid-header {
+        font-size: 12px;
     }
 
     .point {
         margin-bottom: 30%;
     }
 
-    .masthead1 {
-        font-size: 18px;
+    .header {
+        font-size: 12px;
     }
 
     .item {
@@ -631,7 +636,7 @@ video {
     }
 
     /* about.html */
-    #aboutMe {   
+    /* #aboutMe {   
         width: 100%;
         
         display: flex;
@@ -641,9 +646,9 @@ video {
     .aboutHeader {
         font-size: 1.8rem;
     }
-    
+     */
     /* case studies */
-    .intro, #introDetails, #pageSection, .divide, .center {
+    /* .intro, #introDetails, #pageSection, .divide, .center {
         width: 100%;
 
         display: flex;
@@ -685,10 +690,10 @@ video {
 
     .sectionText {
         margin-bottom: 20%;
-    }
+    } */
 
     /* footer */
-    #footer {
+    /* #footer {
         width: 100%;
 
         display: flex;
@@ -711,6 +716,6 @@ video {
 
     img {
         height: 100%;
-    }
+    } */
 
-  
+}
