@@ -1,12 +1,8 @@
 html, body {
-    /* margin-top: 2%;
-    margin-left: 8%;
-    margin-right: 8%; */
+    display: flex;
     box-sizing:border-box;
-
     animation: fadeInLanding 1s ease-in 0s;
     background-color: #f9f9f9;
-
     scroll-behavior: smooth;
 }
 
