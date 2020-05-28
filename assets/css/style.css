@@ -1,0 +1,646 @@
+html, body {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+
+    animation: fadeInLanding 1s ease-in 0s;
+    background-color: #f9f9f9;
+
+    scroll-behavior: smooth;
+}
+
+/********** FONTS **********/
+
+html {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5; 
+    color: #333;
+
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-weight: 500;
+    /* letter-spacing: 1.7px; */
+    font-size: 1.5rem;
+    /* text-transform: uppercase; */
+}
+
+b {
+    font-weight: 500;
+    color: #00C7B1;
+}
+
+b:hover {
+    animation: fadeOut 0.5s ease-in 0s forwards;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.aboutDesc a:hover {
+    animation: fadeOut 0.5s ease-in 0s forwards;
+}
+
+p {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.caption {
+    text-align: center;
+    opacity: 40%;
+}
+
+/********** NAVBAR **********/
+
+.home {
+    /* letter-spacing: 1px; */
+    font-size: 1em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* font-size: 0.8em; */
+}
+
+.navTitle {
+    /* font-size: 1em; */
+    text-decoration: none;
+    /* letter-spacing: 2px; */
+    opacity: 40%;
+    /* background: linear-gradient(180deg,rgba(255,255,255,0) 60%,#00C7B1 40%);
+    transition: background 0.2s ease;
+    margin-block-end: 0.5em; */
+}
+
+.navTitleLanding {
+    /* font-size: 1em; */
+    text-decoration: none;
+    /* letter-spacing: 2px; */
+    opacity: 100%;
+    color: #00C7B1;
+}
+
+/* .navTitle:hover { */
+    /* background: linear-gradient(180deg, #00C7B1 50%, #00C7B1 50%); */
+    /* animation: fadeIn 0.5s ease-in 0s forwards; */
+/* } */
+
+.navTitleLand {
+    color: #00C7B1;
+}
+
+.sideBlank {
+    width: 60px;
+}
+
+.nav {
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+/********** INDEX **********/
+#masthead {
+    align-items: left;
+    margin-right: 40rem;
+    font-size: 1.8rem;
+}
+
+.masthead1 {
+    /* font-size: 1.8rem; */
+    text-align: left;
+    /* letter-spacing: 1px; */
+    margin-bottom: 8%;
+}
+
+.masthead2 {
+    font-size: inherit;
+    text-align: left;
+}
+
+.selectedWork {
+    /* text-transform: lowercase; */
+    /* letter-spacing: 4px; */
+    font-size: 0.8em;
+}
+
+.point {
+    font-size: 2rem;
+
+}
+
+.point:hover {
+    animation: upDown 0.5s ease-in-out 0s infinite alternate;
+}
+
+/***** This is the grid ******/
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blank {
+    width: 60%;
+}
+
+#showcaseWork {
+    margin-top: 100px;
+}
+
+.item img {
+    width: 4000px;
+    max-width: 100%;
+}
+
+.item {
+    margin-bottom: 100px;
+}
+
+.item img:hover {
+    animation: fadeOut 0.5s ease-in 0s forwards;
+}
+
+/********** ABOUTME CONTENT **********/
+
+#aboutMe {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10%;
+}
+
+.aboutDesc img {
+    width: 1600px;
+    max-width: 100%;
+
+    margin-bottom: 5%;
+}
+
+.aboutHeader {
+    font-size: 30px;
+    /* letter-spacing: 1px; */
+    margin-bottom: 5%;
+}
+
+.aboutDesc {
+    padding-bottom: 5%;
+}
+
+.aboutWords {
+    margin-left: 12%;
+    margin-bottom: 5%;
+}
+
+/********** CASE STUDY **********/
+
+/***** Intro section *****/
+
+.tag {
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.imageHeader {
+    display: flex;
+    justify-content: center;
+}
+
+#imageHeader {
+    margin-bottom: 200px;
+}
+
+.imageHeader img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.titleText {
+    font-weight: 500;
+    line-height: 1.5;
+    /* letter-spacing: 1px; */
+    font-size: 30px;
+
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#introDetails {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 200px;
+}
+
+.introSubText {
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 1.5;
+    width: 90%;
+}
+
+.introBlank {
+    width: 20%;
+}
+
+.introDesc {
+    width: 30%;
+}
+
+.descCatTitle {
+    font-size: 14px;
+    /* letter-spacing: 2px; */
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 40%;
+}
+
+.descCat {
+    margin-bottom: 20px;
+}
+
+/***** Case study content *****/
+
+video {
+    border: 10px solid white;
+}
+
+.caption {
+    margin-top: 1%;
+}
+
+#pageSection {
+    margin-bottom: 200px;
+}
+
+.pageSectionTitle {
+    font-size: 1em;
+    /* letter-spacing: 2px; */
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    opacity: 40%;
+
+    margin-bottom: 2%;
+}
+
+.sectionText {
+    font-size: 30px;
+    width: 70%;
+    line-height: 1.5;
+
+    margin-bottom: 3%;
+}
+
+.sectionTextAll {
+    font-size: 30px;
+    line-height: 1.5;
+
+    margin-top: 30%;
+    margin-bottom: 3%;
+}
+
+.sectionSubText {
+    width: 60%;
+}
+
+.sectionSubTextLong {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sectionSubTextHalf {
+    width: 70%;
+}
+
+.sectionSubTextHalfNon {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.item1 {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.item1 img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.divide {
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionText2 {
+    font-size: 30px;
+    width: 60%;
+    line-height: 1.5;
+
+    margin-right: 10%;
+}
+
+.mobile video {
+    width: 20%;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.center {
+    margin-left: 25%;
+    margin-right: 25%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionText img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.threeCol {
+    display: flex;
+    flex-direction: row;
+}
+
+/********** FOOTER **********/
+
+#footer {
+    padding-top: 10%;
+    padding-bottom: 2%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyright {
+    /* letter-spacing: 1px; */
+    font-size: 14px;
+    padding-bottom: 3%;
+}
+
+.copyright {
+    /* letter-spacing: 1px; */
+    font-size: 14px;
+    padding-bottom: 3%;
+}
+
+#media {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.icon {
+    padding-left: 30px;
+    /* letter-spacing: 1px; */
+    font-size: 14px;
+}
+
+.icon a:hover {
+    color: #00C7B1;
+    animation: blackBlue 0.5s ease-in 0s forwards;
+}
+
+/********** ANIMATIONS **********/
+
+/* Black to blue */
+@keyframes blackBlue {
+    from {
+        color: #333;
+    }
+    to {
+        color: #00C7B1
+    }
+}
+
+/* It go bouncy bounce */
+@keyframes upDown {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+} 
+
+/* Occurs when hovering over nav and footer links */
+@keyframes fadeIn {
+    from {
+        opacity: 20%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+/* Fade into page once landed */
+@keyframes fadeInLanding {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%
+    }
+}
+
+/* Fade out when hovering over links (NOT nav and footer links) */
+
+@keyframes fadeOut {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 50%
+    }
+}
+
+/********** RESPONSIVE **********/
+
+/* Use a media query to add a breakpoint at 800px: */
+
+@media screen and (max-width: 800px) {
+    /* nav */
+    label {
+        display: block;
+        cursor: pointer;
+
+        float: right;
+        margin-bottom: 10%;
+    }
+
+    .menu {
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        margin: 5px;
+
+        font-weight: 400;
+    }
+
+    .navTitleLand:hover {
+        font-weight: 400;
+    }
+
+    #toggle:checked + .menu {
+        display: flex;
+    }
+
+    /* index.html */
+    #content, #columns, #showcaseWork {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #masthead {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .point {
+        margin-bottom: 30%;
+    }
+
+    .masthead1 {
+        font-size: 18px;
+    }
+
+    .item {
+        margin-bottom: 40%;
+    }
+
+    #showcaseWork {
+        margin-top: 0px;
+    }
+
+    /* about.html */
+    #aboutMe {   
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutHeader {
+        font-size: 1.8rem;
+    }
+    
+    /* case studies */
+    .intro, #introDetails, #pageSection, .divide, .center {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tag {
+        font-size: 10px;
+    }
+
+    .center {
+        margin: 0%;
+    }
+
+    .item1 {
+        margin-bottom: 20%;
+    }
+
+    .sectionSubTextLong {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionSubTextHalfNon, .sectionText, .sectionSubText, .sectionSubTextLong, .sectionSubTextHalf, .sectionSubTextHalfNon, .sectionText2 {
+        width: 100%;
+        margin: 0%;
+        max-width: 100%;
+    }
+
+    .mobile video {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+
+    .titleText, .sectionText, .sectionText2, .titleText, .introSubText {
+        font-size: 18px;
+    }
+
+    .sectionText {
+        margin-bottom: 20%;
+    }
+
+    /* footer */
+    #footer {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutWords {
+        margin-left: 0%;
+    }
+
+    .connect {
+        font-size: 14px;
+        padding-bottom: 5%;
+    }
+
+    #media .icon img {
+        padding-left: 0%;
+        padding-right: 30px;
+    }
+
+    img {
+        height: 100%;
+    }
+
+  }
