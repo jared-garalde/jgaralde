@@ -1,8 +1,8 @@
 html, body {
     padding-top: 1.5%;
     padding-bottom: 1.5%;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
     animation: fadeInLanding 1s ease-in 0s;
     background-color: #f9f9f9;
     scroll-behavior: smooth;
@@ -27,26 +27,38 @@ html {
 h1 {
     font-weight: 400;
     /* letter-spacing: 1.7px; */
-    font-size: 1em;
+    font-size: 1.4em;
     /* text-transform: uppercase; */
 }
 h2 {
     font-weight: 400;
-    font-size: 0.7em;
+    font-size: 1.2em;
+    opacity: 50%;
+    transition: all 0.8s ease;
 }
+h2:hover {
+    opacity: 100%;
+}
+
 
 b {
     font-weight: 500;
     color: #00C7B1;
+    /* transition: all 0.2s ease; */
 }
 
 /* b:hover {
-    animation: fadeOut 0.5s ease-in 0s forwards;
+    opacity: 100%;
 } */
 
 a {
     text-decoration: none;
     color: black;
+}
+img {
+    border: 10px solid #00C7B1;
+    border-radius: 2%;
+
 }
 
 /* .aboutDesc a:hover {
@@ -59,8 +71,8 @@ p {
 
 nav {
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 30px;
+    padding-right: 0px; */
 }
 .bold {
     font-weight: 500;
@@ -76,10 +88,13 @@ nav {
     display:flex;
 }
 .col {
-    padding: 20px;
+    padding: 0px;
 }
 flex-grid .col{
     flex: 1;
+}
+.col .h1 {
+    flex-basis: rem;
 }
 .flex-grid-thirds {
     display: flex;
@@ -90,15 +105,15 @@ flex-grid .col{
 }
 .flex-grid-header {
     display: flex;
-    justify-content:flex-start;
+    justify-content: space-between;
 }
-.flex-grid-header .col {
-    justify-content: flex-start;
-    width: 40%;
+.flex-grid-header .col{
+    flex: 1 30rem;
 }
 .flex-grid-header-direct {
     display: flex;
     justify-content:flex-start;
+    /* flex-grow: 50; */
 }
 .flex-grid-header-direct .col{
     justify-content: flex-start;
@@ -110,10 +125,23 @@ flex-grid .col{
     justify-content:space-between;
 }
 .flex-grid-footer .col{
-    justify-content: flex-end;
-    padding-right: 35px;
+    /* justify-content: flex-end; */
+    /* padding-right: 35px; */
 
 }
+
+.flex-grid-about{
+    display: flex;
+    justify-content:space-between;
+}
+.flex-grid-about .col{
+    /* justify-content: flex-end; */
+    /* padding-right: 35px; */
+    /* width: 40%; */
+}
+
+
+
 
 
 /********** NAVBAR **********/
@@ -154,14 +182,15 @@ flex-grid .col{
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
-    opacity: 40%
+    opacity: 40%;
+    transition: all 0.8s ease;
 
     /* letter-spacing: 2px; */
 
 }
 .nav-item a:hover {
-    opacity: 100%;
     color: #00C7B1;
+    opacity: 100%;
 }
 
 /* .navTitle:hover { */
@@ -204,7 +233,6 @@ label {
 #header{
     align-items: left;
     /* margin-right: 40rem; */
-    font-size: 1.8rem;
 }
 
 /* .masthead1 {
@@ -263,13 +291,13 @@ label {
 }
 
 /********** ABOUTME CONTENT **********/
-
+/* 
 #aboutMe {
     display: flex;
     flex-direction: row;
 
     margin-top: 10%;
-}
+} */
 
 .aboutDesc img {
     width: 1600px;
