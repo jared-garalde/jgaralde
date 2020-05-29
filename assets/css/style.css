@@ -135,6 +135,7 @@ flex-grid .col{
     justify-content:space-between;
 }
 .flex-grid-about .col{
+    flex: 1 30 rem;
     /* justify-content: flex-end; */
     /* padding-right: 35px; */
     /* width: 40%; */
