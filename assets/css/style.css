@@ -635,9 +635,7 @@ video {
         display: flex;
         align-content: flex-start;
     }
-    .flex-grid-about img {
-        width: 100%;
-    }
+
     /* nav */
     .navbar {
         display: block;
