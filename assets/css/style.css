@@ -322,14 +322,14 @@ label {
     margin-top: 10%;
 } */
 
-.aboutDesc img {
+/* .aboutDesc img {
     width: 1600px;
     max-width: 100%;
 
     margin-bottom: 5%;
-}
+} */
 
-.aboutHeader {
+/* .aboutHeader {
     font-size: 30px;
     /* letter-spacing: 1px; */
     margin-bottom: 5%;
@@ -342,7 +342,7 @@ label {
 .aboutWords {
     margin-left: 12%;
     margin-bottom: 5%;
-}
+} */
 
 /********** CASE STUDY **********/
 
@@ -624,14 +624,14 @@ video {
 
 /* Use a media query to add a breakpoint at 800px: */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .body {
         margin-left: 0%; 
         margin-right: 0%;
     }
     .col {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
     .home {
         padding-left: 5%;
