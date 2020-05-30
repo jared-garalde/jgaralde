@@ -634,8 +634,8 @@ video {
         padding-right: 0%;
     }
     .flex-grid-header img {
-        padding: 0%; 
-    }
+        width: 50%; 
+        height: auto; 
     .home {
         padding-left: 5%;
     }
