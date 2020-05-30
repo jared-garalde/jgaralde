@@ -624,6 +624,10 @@ video {
 /* Use a media query to add a breakpoint at 800px: */
 
 @media screen and (max-width: 800px) {
+    .body {
+        margin-left: 0; 
+        margin-right: 0;
+    }
     .col {
         padding-left: 5%;
         padding-right: 5%;
