@@ -1,8 +1,8 @@
 html, body {
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 10%;
+    margin-right: 10%;
     animation: fadeInLanding 1s ease-in 0s;
     background-color: #f9f9f9;
     scroll-behavior: smooth;
@@ -43,7 +43,7 @@ h2:hover {
 
 b {
     font-weight: 500;
-    color: #00C7B1;
+    color: #5F9BC6;
     /* transition: all 0.2s ease; */
 }
 
@@ -55,10 +55,14 @@ a {
     text-decoration: none;
     color: black;
 }
-img {
-    border: 10px solid #00C7B1;
-    border-radius: 2%;
-
+.flex-grid-header img {
+    width: 350px;
+    /* padding-left: 100px; */
+    padding: 50px;
+}
+.flex-grid-about img {
+    width: 60%;
+    box-shadow: -.8em .5em .3em #3333;
 }
 
 /* .aboutDesc a:hover {
@@ -85,44 +89,58 @@ nav {
 
 /********** GRID*********/
 .flex-grid{
-    display:flex;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
 }
 .col {
-    padding: 0px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 flex-grid .col{
+    display: flex;
+    justify-content: center;
     flex: 1;
+    text-align: center;
 }
-.col .h1 {
-    flex-basis: rem;
-}
+
 .flex-grid-thirds {
     display: flex;
-    justify-content:space-between
+    justify-content: space-between;
 }
 .flex-grid-thirds .col{
     width: 32%;
 }
 .flex-grid-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .flex-grid-header .col{
-    flex: 1 30rem;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
 }
 .flex-grid-header-direct {
     display: flex;
-    justify-content:flex-start;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
     /* flex-grow: 50; */
 }
 .flex-grid-header-direct .col{
-    justify-content: flex-start;
-    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
 }
 .flex-grid-footer {
+    padding-top: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
 }
 .flex-grid-footer .col{
     /* justify-content: flex-end; */
@@ -152,6 +170,8 @@ flex-grid .col{
     display: inline-block;
     font-size: inherit;
     justify-content: flex-start;
+    padding-left: 80px;
+    opacity: 40%;
 }
 
 .menu {
@@ -165,6 +185,7 @@ flex-grid .col{
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
+    padding-right: 40px;
     /* font-size: 0.8em; */
 }
 
@@ -190,7 +211,7 @@ flex-grid .col{
 
 }
 .nav-item a:hover {
-    color: #00C7B1;
+    color: #5F9BC6;
     opacity: 100%;
 }
 
@@ -200,7 +221,7 @@ flex-grid .col{
 /* } */
 
 .navTitleLand {
-    color: #00C7B1;
+    color: rgb(164, 167, 166);
 }
 
 .sideBlank {
@@ -232,7 +253,7 @@ label {
 
 /********** INDEX **********/
 #header{
-    align-items: left;
+    /* align-items: left; */
     /* margin-right: 40rem; */
 }
 
@@ -278,10 +299,10 @@ label {
     margin-top: 100px;
 }
 
-.item img {
+/* .item img {
     width: 4000px;
     max-width: 100%;
-}
+} */
 
 .item {
     margin-bottom: 100px;
@@ -541,7 +562,7 @@ video {
 }
 
 .icon a:hover {
-    color: #00C7B1;
+    color: #5F9BC6;
     animation: blackBlue 0.5s ease-in 0s forwards;
 }
 
@@ -553,7 +574,7 @@ video {
         color: #333;
     }
     to {
-        color: #00C7B1
+        color: #5F9BC6
     }
 }
 
@@ -603,8 +624,22 @@ video {
 /* Use a media query to add a breakpoint at 800px: */
 
 @media screen and (max-width: 800px) {
+    .col {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .home {
+        padding-left: 5%;
+    }
+    .flex-grid .home {
+        display: flex;
+        align-content: flex-start;
+    }
+    .flex-grid-about img {
+        width: 100%;
+    }
     /* nav */
-    /* label {
+    .navbar {
         display: block;
         cursor: pointer;
         float: right;
@@ -612,25 +647,25 @@ video {
 
     }
 
-    .menu {
+    .nav-links {
         width: 100%;
         display: none;
     }
 
-    .menu a {
+    .nav-item {
         display: block;
         margin: 5px;
 
         font-weight: 400;
     }
 
-    .navTitleLand:hover {
+    .nav-item:hover {
         font-weight: 400;
     }
 
-    #toggle:checked + .menu {
+    #toggle:checked + .nav-{
         display: flex;
-    } */
+    } 
 
     /* index.html */
     #content, #columns, #showcaseWork {
@@ -665,7 +700,7 @@ video {
     }
 
     /* about.html */
-    /* #aboutMe {   
+    #aboutMe {   
         width: 100%;
         
         display: flex;
@@ -675,7 +710,8 @@ video {
     .aboutHeader {
         font-size: 1.8rem;
     }
-     */
+
+    
     /* case studies */
     /* .intro, #introDetails, #pageSection, .divide, .center {
         width: 100%;
