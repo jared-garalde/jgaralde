@@ -56,10 +56,10 @@ a {
     color: black;
 }
 .flex-grid-header img {
-    width: 320px;
+    width: auto; 
     height: auto;
     /* padding-left: 100px; */
-    padding: 5%;
+    padding: 4%;
 }
 .flex-grid-about img {
     width: 60%;
@@ -332,8 +332,8 @@ label {
 /* .aboutHeader {
     font-size: 30px;
     /* letter-spacing: 1px; */
-    margin-bottom: 5%;
-}
+    /* margin-bottom: 5%;
+} */
 
 .aboutDesc {
     padding-bottom: 5%;
@@ -633,9 +633,7 @@ video {
         padding-left: 0%;
         padding-right: 0%;
     }
-    .flex-grid-header img {
-        width: 50%; 
-        height: auto; 
+  
     .home {
         padding-left: 5%;
     }
