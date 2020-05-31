@@ -6,6 +6,7 @@ $(".point").click(function() {
         'slow');
 });
 
+
 /* tbd below */
 
 /* ANIMATE: Make hover items pop up when hovering over project square */
